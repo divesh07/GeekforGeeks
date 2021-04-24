@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'com.iitb'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.codepine.api', name: 'testrail-api-java-client', version: '2.0.1'
+    // https://mvnrepository.com/artifact/org.apache.clerezza.ext/org.json.simple
+    compile group: 'org.apache.clerezza.ext', name: 'org.json.simple', version: '0.4'
+    compile group: 'org.codehaus.groovy', name: 'groovy', version: '2.4.5'
+}
